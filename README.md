@@ -15,7 +15,8 @@ You need first to download the Cityscapes dataset by yourself, since the Citysca
 
 ## 2 set the parameters  
 All the parameters are manally set in the Seg_NDnet/train.py.  
-The parameters you need to change may be the path of the Cityscape dataset.
+The parameters you need to change may be the path of the Cityscape dataset.　　
+**Or you can just put the Cityscape in the "opt" memu in Ubuntu**  
 
 ## 3 Train  
 You can train the model just with after cd to the menu Seg_NDnet:   
@@ -33,7 +34,7 @@ The code is located at 'Cityscape-master/cityscapescripts/evaluation/evalPixelLe
 **python evalPixelLevelSemanticLabeling.py**  
 There are two parameters you need to specify    
 line 52 PRED_PATH='the path of saved prediction (gray label)images'  
-line 667  groundTruthImgList = glob.glob('/opt/Cityscapes/gtFine_trainvaltest/gtFine/val/*/*_gtFine_labelIds.png'(the path of gt images))  
+line 667  groundTruthImgList = glob.glob(**'/opt/Cityscapes/gtFine_trainvaltest/gtFine/val/*/*_gtFine_labelIds.png'**(the path of gt images))  
 
 
 
