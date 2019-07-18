@@ -14,10 +14,11 @@ Usage
 You need first to download the Cityscapes dataset by yourself, since the Cityscape use 19 class label for semantic segmentation task, you also need to convert the original 33 class label image to 19 class image using the code provided by the Cityscapes team
 
 2 set the parameters  
-All the parameters are manally set in the Seg_NDnet/train.py
+All the parameters are manally set in the Seg_NDnet/train.py.  
+The parameters you need to change may be the path of the Cityscape dataset.
 
 3 Train  
-After all the parameters is set, you can train the model just with:   
+You can train the model just with after cd to the menu Seg_NDnet:   
 python train.py  
 If there are any other error message about "python package can not find", use "pip intall xx" to setup   
 
