@@ -26,4 +26,12 @@ After the training completed, set the "RESTORE_FROM" in "Seg_NDnet/infer_citys.p
 python infer_citys.py  
 this command will make prediction over the val set one by one and save the prediction to the path you specified
 
+５Compute miou  
+We use the code provide by the Cityscape team to compute miou of test;  
+The code is locate at 'Cityscape-master/cityscapescripts/evaluation/evalPixelLevelSemanticLabeling.py'  
+There are two parameters you need to specify    
+line 52 PRED_PATH='the path of saved prediction (gray label)images'  
+line 667  groundTruthImgList = glob.glob('/opt/Cityscapes/gtFine_trainvaltest/gtFine/val/*/*_gtFine_labelIds.png'(the path of gt images))
+
+
 
