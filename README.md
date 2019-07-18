@@ -22,16 +22,18 @@ python train.py
 If there are any other error message about "python package can not find", use "pip intall xx" to setup   
 
 4 Test  
-After the training completed, set the "RESTORE_FROM" in "Seg_NDnet/infer_citys.py" with the path at which your model saved, and then    
+After the training completed, set the "RESTORE_FROM" in "Seg_NDnet/infer_citys.py" with the path at which your model saved, and then run     
 python infer_citys.py  
 this command will make prediction over the val set one by one and save the prediction to the path you specified
 
 ５Compute miou  
-We use the code provide by the Cityscape team to compute miou of test;  
-The code is locate at 'Cityscape-master/cityscapescripts/evaluation/evalPixelLevelSemanticLabeling.py'  
+We use the code provided by the Cityscape team to compute miou of test;  
+The code is located at 'Cityscape-master/cityscapescripts/evaluation/evalPixelLevelSemanticLabeling.py'   
+python evalPixelLevelSemanticLabeling.py  
 There are two parameters you need to specify    
 line 52 PRED_PATH='the path of saved prediction (gray label)images'  
-line 667  groundTruthImgList = glob.glob('/opt/Cityscapes/gtFine_trainvaltest/gtFine/val/*/*_gtFine_labelIds.png'(the path of gt images))
+line 667  groundTruthImgList = glob.glob('/opt/Cityscapes/gtFine_trainvaltest/gtFine/val/*/*_gtFine_labelIds.png'(the path of gt images))  
+
 
 
 
