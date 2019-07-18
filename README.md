@@ -15,7 +15,7 @@ You need first to download the Cityscapes dataset by yourself, since the Citysca
 
 ## 2 set the parameters  
 All the parameters are manally set in the Seg_NDnet/train.py.  
-The parameters you need to change may be the path of the Cityscape dataset.　　
+The parameters you need to change may be the path of the Cityscape dataset.  　
 **Or you can just put the Cityscape in the "opt" memu in Ubuntu**  
 
 ## 3 Train  
