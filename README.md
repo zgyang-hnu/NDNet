@@ -19,7 +19,7 @@ The parameters you need to change may be the path of the Cityscape dataset.
 
 ## 3 Train  
 You can train the model just with after cd to the menu Seg_NDnet:   
-**python train.py ** 
+**python train.py**   
 If there are any other error message about "python package can not find", use "pip intall xx" to setup   
 
 ## 4 Test  
