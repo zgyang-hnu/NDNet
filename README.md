@@ -11,7 +11,9 @@ Pytorch 1.0
 # Usage
 
 ## 1 Prepare the data  
-You need first to download the Cityscapes dataset by yourself, since the Cityscape use 19 class label for semantic segmentation task, you also need to convert the original 33 class label image to 19 class image using the code provided by the Cityscapes team
+You need first to download the Cityscapes dataset by yourself, since the Cityscape use 19 class label for semantic segmentation task, you also need to convert the original 33 class label image to 19 class lbel image using the code provided by the Cityscapes team.  
+**If you used Cityscape before, you can ignore this step.**
+
 
 ## 2 set the parameters  
 All the parameters are manally set in the Seg_NDnet/train.py.  
@@ -19,7 +21,7 @@ The parameters you need to change may be the path of the Cityscape dataset.   ã€
 **Or you can just put the Cityscape in the "opt" memu in Ubuntu**  
 
 ## 3 Train  
-You can train the model just with after cd to the menu Seg_NDnet:   
+You can train the model after cd to the menu Seg_NDnet with:   
 **python train.py**   
 If there are any other error message about "python package can not find", use "pip intall xx" to setup   
 
