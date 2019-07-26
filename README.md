@@ -7,6 +7,8 @@ We have tested our code on Ubuntu 16.04, Pytorch 1.0
 Requirements:
 
 Pytorch 1.0
+![image](https://github.com/zgyang-hnu/NDNet/blob/master/segresults.jpg)
+
 
 # Usage
 
