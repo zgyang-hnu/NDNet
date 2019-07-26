@@ -1,5 +1,5 @@
 # NDNet
-This repository is the implementation of "Narrow while deepnet work for real-time semantic segmenation"
+This repository is the implementation of "Narrow while deep network for real-time semantic segmenation"
 
 We have tested our code on Ubuntu 16.04, Pytorch 1.0
 
