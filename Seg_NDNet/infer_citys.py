@@ -1,5 +1,4 @@
-"""Run DeepLab-ResNet on a given image.
-
+"""
 This script computes a segmentation mask for a given image.
 """
 
