@@ -175,12 +175,12 @@ for epoch in range(10000):
 
      if step < 21:
         disp_info = 'Steps {}/{}'.format(step, max_steps) + ' lr=%.3e' % lr  + ' loss=%.3f' % loss.item()
-        #print(print_str)
+        
 
     #..........display mean loss rathar than real-time loss......................
      else:
         disp_info = 'Steps {}/{}'.format(step, max_steps) + ' lr=%.3e' % lr  + ' meanloss_over_last20=%.3f' % loss_moving_averager.compute_average()
-        #print(print_str)
+        
      dbar.set_description(disp_info, refresh=False) 
      if step > max_steps:
         stop_flag= True
