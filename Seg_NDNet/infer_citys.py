@@ -24,8 +24,7 @@ import glob
 
 from NDNet_ende import NDNet_ende
 #from NDNet_fcn8 import NDNet_fcn8
-#from fcn_res import FCN
-BatchNorm2d=nn.BatchNorm2d
+
 
 
 
