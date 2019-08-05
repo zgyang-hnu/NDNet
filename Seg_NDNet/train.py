@@ -13,7 +13,7 @@ import numpy as np
 import torch
 from torch.utils import data
 import torch.nn as nn
-import torch.distributed as dist
+
 import torch.backends.cudnn as cudnn
 import torchvision.transforms as transforms
 
