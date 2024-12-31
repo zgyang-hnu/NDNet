@@ -13,6 +13,7 @@ from icnet import *
 from segnet import *
 from contextnet import *
 from MobileNetV2_fcn import *
+from MSHNet import *
 
 with torch.cuda.device(0):
   #model = models.resnet18()
@@ -27,7 +28,8 @@ with torch.cuda.device(0):
   #model = ENet(19)
   #model = icnet(19)#icenet use 513 1025 or 1025 2049 for test
   #model = segnet(19)#
-  model = EESPNet_Seg(19).cuda()
+  #model = EESPNet_Seg(19).cuda()
+  model = MSHNet().cuda()
   #net = models.densenet161()
   model.eval()
   flops, params = get_model_complexity_info(model, (3,1024, 2048), as_strings=True, print_per_layer_stat=True)
